@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-a-Thon</title>
+    <script type="text/javascript" src="./test.js" defer></script>
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="all">
+        <header>
+            <img src='https://cdn.discordapp.com/attachments/895787690572795914/904818542979973171/bruh.png' alt='trivialogo'
+                class='avatar1'>
+            <img src='https://cdn.discordapp.com/attachments/895787690572795914/895787768456826920/testimage.png'
+                alt='trivialogo' class='avatar2'>
+        </header>
+
+        <div class="title">
+            <a href='index.html'>
+                WELCOME TO QUIZ-A-THON
+            </a>
+        </div>
+        <br>
+        <br>
+        <h3 class="statement">You have selected the <u id='choice'></u> quiz</h3>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a class='active' href="javascript:void(0)" class="dropbtn">Test</a>
+                    <div class="dropdown-content">
+                        <a href="test.html?choice=0">Math</a>
+                        <a href="test.html?choice=1">Humanities</a>
+                        <a href="test.html?choice=2">Science</a>
+                        <a href="test.html?choice=3">History</a>
+                    </div>
+                </li>
+                <li><a href="aboutUs.html">About</a></li>
+            </ul>
+        </nav>
+        <div class='score' id='score'>
+        </div>
+        <br>
+    </div>
+    <div class='image'>
+        <img src="" alt='Math' id='logo'>
+    </div>
+    <div class="quiz" id='questions'>
+        <h1 id='subject' class='subject'></h1>
+        <form id='form' method='post'>
+            <p class='questLayout'><b class='no' id='b1'></b>
+            <div class='ques' id='ques1'>(Question 1)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q1'>
+                    <input type="radio" name="1" value="a" id="radioAq1"><label for="radioAq1">a) 4x - 10</label><br>
+                    <input type="radio" name="1" value="b" id="radioBq1"><label for="radioBq1">b) 2x - 5</label><br>
+                    <input type="radio" name="1" value="c" id="radioCq1"><label for="radioCq1">c) 4x - 5</label><br>
+                    <input type="radio" name="1" value="d" id="radioDq1"><label for="radioDq1">d) 4x - 5 + 1</label><br>
+
+                </div>
+
+            </div>
+            <div class='a' id='a1'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b2'></b>
+            <div class='ques' id='ques2'>(Question 2)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q2'>
+                    <input type="radio" name="2" value="a" id="radioAq2"><label for="radioAq2">a) xe^x</label><br>
+                    <input type="radio" name="2" value="b" id="radioBq2"><label for="radioBq2">b) e^x</label><br>
+                    <input type="radio" name="2" value="c" id="radioCq2"><label for="radioCq2">c) xe^(x-1)</label><br>
+                    <input type="radio" name="2" value="d" id="radioDq2"><label for="radioDq2">d) e^(x-1)</label><br>
+                </div>
+            </div>
+            <div class='a' id='a2'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b3'></b>
+            <div class='ques' id='ques3'>(Question 3)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q3'>
+                    <input type="radio" name="3" value="a" id="radioAq3"><label for="radioAq3">a) 2x^5 - 3x^6 -
+                        1</label><br>
+                    <input type="radio" name="3" value="b" id="radioBq3"><label for="radioBq3">b) 2x^5 -
+                        9x^2</label><br>
+                    <input type="radio" name="3" value="c" id="radioCq3"><label for="radioCq3">c) 12x^5 -
+                        9x^2</label><br>
+                    <input type="radio" name="3" value="d" id="radioDq3"><label for="radioDq3">d) 12x^5 - 9x^2 -
+                        1</label><br>
+                </div>
+            </div>
+            <div class='a' id='a3'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b4'></b>
+            <div class='ques' id='ques4'>(Question 4)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q4'>
+                    <input type="radio" name="4" value="a" id="radioAq4"><label for="radioAq4">a) 14x - 9</label><br>
+                    <input type="radio" name="4" value="b" id="radioBq4"><label for="radioBq4">b) 7x - 18</label><br>
+                    <input type="radio" name="4" value="c" id="radioCq4"><label for="radioCq4">c) 14x^2 - 9x</label><br>
+                    <input type="radio" name="4" value="d" id="radioDq4"><label for="radioDq4">d) 7x - 9</label><br>
+                </div>
+            </div>
+            <div class='a' id='a4'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b5'></b>
+            <div class='ques' id='ques5'>(Question 5)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q5'>
+                    <input type="radio" name="5" value="a" id="radioAq5"><label for="radioAq5">a) x^2 - 4x</label><br>
+                    <input type="radio" name="5" value="b" id="radioBq5"><label for="radioBq5">b) 3x^2 - 4x</label><br>
+                    <input type="radio" name="5" value="c" id="radioCq5"><label for="radioCq5">c) 3x^2</label><br>
+                    <input type="radio" name="5" value="d" id="radioDq5"><label for="radioDq5">d) x^2 - 4x -
+                        1</label><br>
+                </div>
+            </div>
+            <div class='a' id='a5'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b6'></b>
+            <div class='ques' id='ques6'>(Question 6)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q6'>
+                    <input type="radio" name="6" value="a" id="radioAq6"><label for="radioAq6">a) 4x^4-2x</label><br>
+                    <input type="radio" name="6" value="b" id="radioBq6"><label for="radioBq6">b)
+                        20x^5-4x^2-6</label><br>
+                    <input type="radio" name="6" value="c" id="radioCq6"><label for="radioCq6">c) 4x^4-4x-1</label><br>
+                    <input type="radio" name="6" value="d" id="radioDq6"><label for="radioDq6">d) 20x^4-4x</label><br>
+                </div>
+            </div>
+            <div class='a' id='a6'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b7'></b>
+            <div class='ques' id='ques7'>(Question 7)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q7'>
+                    <input type="radio" name="7" value="a" id="radioAq7"><label for="radioAq7">a) 6x^6-9x</label><br>
+                    <input type="radio" name="7" value="b" id="radioBq7"><label for="radioBq7">b)
+                        42x^6-18x+2</label><br>
+                    <input type="radio" name="7" value="c" id="radioCq7"><label for="radioCq7">c) 42x^6-18x</label><br>
+                    <input type="radio" name="7" value="d" id="radioDq7"><label for="radioDq7">d) 6x^6-18x+2</label><br>
+                </div>
+            </div>
+            <div class='a' id='a7'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b8'></b>
+            <div class='ques' id='ques8'>(Question 8)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q8'>
+                    <input type="radio" name="8" value="a" id="radioAq8"><label for="radioAq8">a) 4x+5</label><br>
+                    <input type="radio" name="8" value="b" id="radioBq8"><label for="radioBq8">b) 8x+5</label><br>
+                    <input type="radio" name="8" value="c" id="radioCq8"><label for="radioCq8">c) 8x^2+5x+7</label><br>
+                    <input type="radio" name="8" value="d" id="radioDq8"><label for="radioDq8">d) 4x+1</label><br>
+                </div>
+            </div>
+            <div class='a' id='a8'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b9'></b>
+            <div class='ques' id='ques9'>(Question 9)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q9'>
+                    <input type="radio" name="9" value="a" id="radioAq9"><label for="radioAq9">a) 8x-6</label><br>
+                    <input type="radio" name="9" value="b" id="radioBq9"><label for="radioBq9">b) 16x-6+1</label><br>
+                    <input type="radio" name="9" value="c" id="radioCq9"><label for="radioCq9">c) 16x-6</label><br>
+                    <input type="radio" name="9" value="d" id="radioDq9"><label for="radioDq9">d) 8x-6+1</label><br>
+                </div>
+            </div>
+            <div class='a' id='a9'></div>
+            </p>
+            <br>
+
+            <p class='questLayout'><b class='no' id='b10'></b>
+            <div class='ques' id='ques10'>(Question 10)</div><br><br><br><br>
+            <div class="switch-field">
+                <div class='q' id='q10'>
+                    <input type="radio" name="10" value="a" id="radioAq10"><label for="radioAq10">a)
+                        12x^2-14x+9</label><br>
+                    <input type="radio" name="10" value="b" id="radioBq10"><label for="radioBq10">b) 3x^3-7x</label><br>
+                    <input type="radio" name="10" value="c" id="radioCq10"><label for="radioCq10">c)
+                        12x^3-14x</label><br>
+                    <input type="radio" name="10" value="d" id="radioDq10"><label for="radioDq10">d)
+                        12x^3-7x</label><br>
+                </div>
+            </div>
+            <div class='a' id='a10'></div>
+            </p>
+            <br>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <input class="button" type="submit" value="Submit Answers">
+            <input class="button" type="reset" value="Clear Answers">
+    </div>
+    </form>
+    <h2 class='about'> For any support please reach out to us through our <a href="aboutUs.html">About Us</a> page</h2>
+</body>
+
+</html>
